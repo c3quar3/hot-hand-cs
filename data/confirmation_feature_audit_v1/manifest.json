@@ -1,0 +1,81 @@
+{
+  "stage": "restart_confirmation_feature_source_audit_v1",
+  "created_at_utc": "2026-08-25T13:37:09.190885+00:00",
+  "outcome_access": "not_read",
+  "lock_manifest_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\manifest.json",
+  "lock_manifest_sha256": "dff227127d105587b9f08919441a19705e9327a146321eb1e05e4dfab005472e",
+  "script_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\scripts\\audit_confirmation_feature_sources_v1.py",
+  "script_sha256": "c46cbd9dc3a8779999e7ed47bbed44ec269c596ce633829f1327d1c9f0fbb82f",
+  "required_columns": {
+    "event_stream.parquet": [
+      "event_type",
+      "tick",
+      "user_steamid"
+    ],
+    "full_tick_player_state.parquet": [
+      "CCSPlayerController.CCSPlayerController_InGameMoneyServices.m_iAccount",
+      "CCSPlayerController.m_bPawnIsAlive",
+      "CCSPlayerPawn.CCSPlayer_ItemServices.m_bHasDefuser",
+      "CCSPlayerPawn.CCSPlayer_ItemServices.m_bHasHelmet",
+      "CCSPlayerPawn.m_ArmorValue",
+      "CCSPlayerPawn.m_angEyeAngles",
+      "CCSPlayerPawn.m_bIsDefusing",
+      "CCSPlayerPawn.m_flFlashDuration",
+      "CCSPlayerPawn.m_iHealth",
+      "CCSPlayerPawn.m_iTeamNum",
+      "CCSPlayerPawn.m_unFreezetimeEndEquipmentValue",
+      "player_id_hash",
+      "tick"
+    ],
+    "position_remedy.parquet": [
+      "is_alive",
+      "player_id_hash",
+      "pos_x",
+      "pos_y",
+      "pos_z",
+      "tick",
+      "vel_x",
+      "vel_y",
+      "vel_z"
+    ],
+    "context.parquet": [
+      "event_type",
+      "round",
+      "tick"
+    ],
+    "weapon_inventory.parquet": [
+      "Weapon.m_iItemDefinitionIndex",
+      "Weapon.m_zoomLevel",
+      "player_id_hash",
+      "tick"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "D1-B",
+      "locked_scope_sha256": "774b2ffe61ecdc5d011809332969752720e46e5856a0aabdd986cdab501f71e5",
+      "maps": 226,
+      "rows": 32791,
+      "parts": 237,
+      "schema_complete": true
+    },
+    {
+      "dataset": "D1-C",
+      "locked_scope_sha256": "5c5ce8d015369f73b3053a2d9084185542f84b4be5288acb7a849cb1f7f1b80f",
+      "maps": 180,
+      "rows": 25084,
+      "parts": 192,
+      "schema_complete": true
+    },
+    {
+      "dataset": "E1-v2",
+      "locked_scope_sha256": "052ef978681ecf3737b43c98dfd1a3177c5ee66c202af29f5388546c81b4ee27",
+      "maps": 557,
+      "rows": 78352,
+      "parts": 637,
+      "schema_complete": true
+    }
+  ],
+  "detail_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_feature_audit_v1\\schema_detail.parquet",
+  "detail_sha256": "90a68a48ca4f80daa96746e1015d74741d57720e3856c6e2e577d8235115c96e"
+}

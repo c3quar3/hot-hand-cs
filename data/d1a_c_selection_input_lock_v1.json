@@ -1,0 +1,107 @@
+{
+  "stage": "restart_d1a_c_selection_input_lock_v1",
+  "created_at_utc": "2026-08-25T13:49:08.843539+00:00",
+  "protocol_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\docs\\02_D1A\u91cd\u65b0\u8bad\u7ec3\u4e0eC\u9009\u62e9\u534f\u8bae_v1_2026-08-25.md",
+  "protocol_sha256": "49258f5143485c341916858175b704a224c9dab6bc6def6c51c3dac6672ec22e",
+  "script_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\scripts\\train_d1a_c_selection_v1.py",
+  "script_sha256": "7dba696aabf9dc31807b7e1ad385dadc2e0062432c331678d135a11146b12c33",
+  "candidate_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\results\\p_hat_final_v8_position_continuity\\candidate.parquet",
+  "candidate_sha256": "dd89641caa3beffff17afa67308d18003e0c73530995172b21d3aaae27a181b4",
+  "candidate_audit_sha256": "74fc094acb19392ae8496647d4ec7b895d2f9af8847b599fbaf838634c2d42cf",
+  "source_lock_sha256": "313ac07ee097fb6780991904d975eb1478a2ae2d1ef95e041898d3ea4b743b59",
+  "rows": 86685,
+  "matches": 300,
+  "queue_gap": [
+    129
+  ],
+  "feature_contract": {
+    "numeric": [
+      "focal_minus_opponent_health",
+      "focal_minus_opponent_team_alive",
+      "focal_speed",
+      "opponent_speed",
+      "position_distance",
+      "focal_has_armor",
+      "opponent_has_armor",
+      "focal_has_helmet",
+      "opponent_has_helmet",
+      "focal_has_defuser",
+      "opponent_has_defuser",
+      "focal_minus_opponent_post_buy_money",
+      "focal_minus_opponent_post_buy_equipment_value",
+      "focal_minus_opponent_team_post_buy_equipment_value",
+      "absolute_vertical_position_difference",
+      "relative_radial_speed",
+      "relative_transverse_speed",
+      "relative_angular_speed",
+      "focal_facing_error_radians",
+      "opponent_facing_error_radians",
+      "focal_nearest_living_teammate_distance",
+      "opponent_nearest_living_teammate_distance",
+      "focal_nearest_living_enemy_distance",
+      "opponent_nearest_living_enemy_distance",
+      "focal_is_scoped",
+      "opponent_is_scoped",
+      "focal_is_alone",
+      "opponent_is_alone",
+      "focal_is_flashed",
+      "opponent_is_flashed",
+      "focal_flash_remaining_seconds",
+      "opponent_flash_remaining_seconds",
+      "bomb_planted",
+      "bomb_time_remaining_seconds",
+      "focal_is_defusing",
+      "opponent_is_defusing"
+    ],
+    "categorical": [
+      "focal_side",
+      "map_name",
+      "focal_speed_source",
+      "opponent_speed_source",
+      "focal_weapon",
+      "opponent_weapon",
+      "weapon_pair",
+      "focal_steamid",
+      "opponent_steamid"
+    ]
+  },
+  "c_grid": [
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "folds": [
+    [
+      "fold_1",
+      1,
+      100,
+      101,
+      150
+    ],
+    [
+      "fold_2",
+      1,
+      150,
+      151,
+      200
+    ],
+    [
+      "fold_3",
+      1,
+      200,
+      201,
+      250
+    ],
+    [
+      "fold_4",
+      1,
+      250,
+      251,
+      300
+    ]
+  ]
+}

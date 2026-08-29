@@ -1,0 +1,56 @@
+{
+  "stage": "future_independent_confirmation_candidate_inventory_v2",
+  "status": "outcome_free_unfrozen_candidate_inventory",
+  "created_local_date": "2026-08-26",
+  "purpose": "Full D:\\CS2_raw_matches source inventory for a future independent confirmation of the fixed 60-second exponentially decayed residual-history state.",
+  "outcome_access": "not_read",
+  "archive_content_access": "not_read",
+  "source_root": "D:\\CS2_raw_matches",
+  "candidate_archives": 78,
+  "candidate_archive_bytes": 64636114767,
+  "candidate_archive_gib": 60.197,
+  "candidate_list_files": [
+    "../future_independent_confirmation_candidates_v1/candidate_archives.csv",
+    "additional_archives.csv"
+  ],
+  "selection_rule": "Every file matching *.rar directly under D:\\CS2_raw_matches at inventory creation, ordered lexically by source archive path.",
+  "selection_inputs": [
+    "archive path",
+    "archive filename",
+    "archive byte count",
+    "archive filesystem timestamp"
+  ],
+  "forbidden_selection_inputs": [
+    "archive content",
+    "gameplay outcome",
+    "label",
+    "conditional residual",
+    "model estimate",
+    "p value",
+    "loss"
+  ],
+  "metadata_index_sha256": "7d41a17abe9373677e38124d2a6bbdec120b3206c023d1fe7ce94e272500662a",
+  "metadata_index_definition": "UTF-8 SHA-256 of newline-joined ordered source_archive|bytes|last_write_utc triples from the union of candidate_list_files; not a content hash.",
+  "preliminary_exclusion_screen": {
+    "method": "Exact archive-basename comparison only; not match_id/map_id de-duplication.",
+    "compared_locations": [
+      "D:\\CS2_D1_raw_archives",
+      "D:\\CS2_E1_raw_archives",
+      "D:\\CS2_v3_development_raw_archives",
+      "D:\\CS2_external_confirmation\\pilot\\raw_research_use_confirmed",
+      "D:\\CS2_external_confirmation\\pilot\\raw_pending_rights_review",
+      "D:\\CS2_external_pilot\\raw"
+    ],
+    "exact_basename_overlaps": 0
+  },
+  "required_before_freezing": [
+    "Archive-existence and metadata recheck",
+    "Research-use rights audit",
+    "Outcome-free exact match_id/map_id extraction",
+    "Zero-overlap audit against D1-A/D1-B/D1-C/E1-v2 scope locks",
+    "Prior-access audit",
+    "Outcome-withheld feature-contract and state-prerequisite audit",
+    "Explicit authorization and a new frozen confirmation protocol before label access"
+  ],
+  "evidence_boundary": "This inventory does not establish independent eligibility, sufficient precision, model performance, hot-hand evidence, or authorization to access results."
+}

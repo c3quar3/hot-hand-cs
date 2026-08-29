@@ -1,0 +1,45 @@
+# Python build and interpreter caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Notebook and R session state
+.ipynb_checkpoints/
+.Rproj.user/
+
+# Local editor and operating-system state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary working files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Local scratch and skill-cache directories (not part of the upload)
+tmp/
+
+# LaTeX build byproducts
+texput.log
+*.aux
+*.out
+output/
+
+# Research-record directories intentionally not published on GitHub
+docs/
+results/
+reference/

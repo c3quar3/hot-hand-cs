@@ -1,0 +1,21 @@
+{
+  "captured_at_utc": "2026-08-27T08:14:20Z",
+  "purpose": "Environment record for evidence-bundle verification and controlled re-execution of the final manuscript artifacts.",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.11.9",
+    "platform": "Windows x86_64"
+  },
+  "packages": {
+    "numpy": "2.4.3",
+    "pandas": "3.0.1",
+    "pyarrow": "25.0.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1"
+  },
+  "notes": [
+    "This is an execution environment record, not a claim that every frozen historical artifact was first generated under this environment.",
+    "The read-only evidence-bundle verifier requires only Python standard-library modules.",
+    "Controlled re-execution additionally requires every input artifact named by the applicable frozen input lock."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "d1a_internal_validation_input_mapping_v1",
+  "created_at_utc": "2026-08-25T14:10:00+00:00",
+  "purpose": "read_only_hash_equivalent_mapping_for_d1a_internal_validation",
+  "outcome_access": "D1-A_previously_authorized_only",
+  "mapping": {
+    "candidate": {
+      "historical_read_only_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\history\\2026-08-25_main_before_restart_20260825\\results\\p_hat_final_v8_position_continuity\\candidate.parquet",
+      "sha256": "dd89641caa3beffff17afa67308d18003e0c73530995172b21d3aaae27a181b4"
+    },
+    "candidate_audit": {
+      "historical_read_only_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\history\\2026-08-25_main_before_restart_20260825\\results\\p_hat_final_v8_position_continuity\\candidate_audit.json",
+      "sha256": "74fc094acb19392ae8496647d4ec7b895d2f9af8847b599fbaf838634c2d42cf"
+    },
+    "source_manifest": {
+      "historical_read_only_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\history\\2026-08-25_main_before_restart_20260825\\data\\p_hat_final_v8_position_continuity_source_manifest.json",
+      "sha256": "313ac07ee097fb6780991904d975eb1478a2ae2d1ef95e041898d3ea4b743b59"
+    }
+  },
+  "equivalence_to_d1a_training_input_lock": {
+    "candidate_sha256": "dd89641caa3beffff17afa67308d18003e0c73530995172b21d3aaae27a181b4",
+    "candidate_audit_sha256": "74fc094acb19392ae8496647d4ec7b895d2f9af8847b599fbaf838634c2d42cf",
+    "source_lock_sha256": "313ac07ee097fb6780991904d975eb1478a2ae2d1ef95e041898d3ea4b743b59"
+  },
+  "write_policy": "No historical input is copied, moved, modified, or overwritten by this mapping."
+}

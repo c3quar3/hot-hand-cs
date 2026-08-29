@@ -1,0 +1,79 @@
+{
+  "stage": "final_manuscript_evidence_bundle_v1",
+  "created_at_utc": "2026-08-27T08:14:20Z",
+  "purpose": "Read-only integrity verification of the result packages cited by the final manuscript draft.",
+  "scope": "Verifies stored result manifests and SHA-256 file lists. It does not regenerate raw telemetry, materialize labels, rescore p_hat, change a frozen analysis, or adjudicate confirmation status.",
+  "environment_record": "reproducibility/environment_v1.json",
+  "packages": [
+    {
+      "name": "final_association",
+      "root": "results/unified_evidence_two_partition_confirmation_v1",
+      "manifest": "manifest.json",
+      "file_manifest": "file_sha256.json",
+      "expected_status": "passed",
+      "expected_file_manifest_sha256": "24a85c8b4d2a1547b2678576d5d81816b103fa7a5ab27149f022c03c4a2054e2",
+      "required_files": {
+        "checkpoint_01_input_lock.json": "345e6de7ecc5bf8ce263b955221072258893e02a9e883484d6e39f8d5e8a5063",
+        "checkpoint_02_smoke.json": "0efc69a8b1851d62e3f9153dd4c170a74567226a251820795f4ba1bcb3052f3a",
+        "checkpoint_03_models.json": "2e415b1e9465af7fc36810eb1b8e56d2bafa1561d74ec618f92ee5fa70b7a2f1",
+        "checkpoint_04_gate_audit.json": "c751355be47d4c776ebe76851f18c77b426e706adaee72bbe534b5bc568720f6",
+        "checkpoint_05_summary.json": "8985bd605cdb639bb46ed75d3345ff4397a5b2e0a29c58bbbd1f0e20433ae7fa"
+      }
+    },
+    {
+      "name": "final_fixed_residual_loss_comparison",
+      "root": "results/unified_evidence_two_partition_loss_comparison_v2",
+      "manifest": "manifest.json",
+      "file_manifest": "file_sha256.json",
+      "expected_status": "passed",
+      "expected_file_manifest_sha256": "019ea351f567daed9d5eac6292d4c7ea109b67f36caf4f8f44e09605a57e0ed7",
+      "required_files": {
+        "comparison.json": "f2e67a5ec840264d1b4d8449fdcc29908eb7bc7e807f619f71d4a66afc7c9434",
+        "gates.json": "3c6e14480a6f4fa874aaca9d4b660dc44316211f6b7f8f2e6d1521da7c7d1d44",
+        "input_lock.json": "1ddf516a30cee0b6f01056ba8e29518e3231d863caf03a0e13bace6d8378a6e8",
+        "row_audit.json": "1e7b239a450945b5f44643935f0a32f97342e77a0ec6472fcec7302941ec6686",
+        "smoke.json": "ae551074d806d22b0706d8db094128ecd241f27a557432b45f795c46260781cd"
+      }
+    },
+    {
+      "name": "same_sample_probability_diagnostic",
+      "root": "results/unified_evidence_two_partition_p_hat_calibration_v1",
+      "manifest": "manifest.json",
+      "file_manifest": "file_sha256.json",
+      "expected_status": "passed",
+      "expected_file_manifest_sha256": "2b986a06f9ed8ae614ea1af454f923ab15cb58cd41d711dee8f8683d4e183e96",
+      "required_files": {
+        "checkpoint_01_input_lock.json": "229a6f0877c53847384617e4a7e4e8d7892c8790c9d34cf57c229be0694eafa5",
+        "checkpoint_02_smoke.json": "35600baaf8305925e34937823eb33cc364fae734e73595df0c1d2705f57ceb9b",
+        "checkpoint_03_metrics.json": "9245720dfc5909d4b2563092334285f422e8db5c02c3c18238cc215b6f0f31ec",
+        "checkpoint_04_gate_audit.json": "e862d9f1826b6585f77531fc68bde1c4680cf637006d2e7142fa5d692fa72fb0"
+      }
+    },
+    {
+      "name": "time_interaction_completion",
+      "root": "results/unified_evidence_two_partition_time_interaction_v1",
+      "manifest": "manifest.json",
+      "file_manifest": "file_sha256.json",
+      "expected_status": "passed",
+      "expected_file_manifest_sha256": "b6a0af47e1086c0b3101a154adc5ae1af83a427c397fc4fd4c743e7a8643ba73",
+      "required_files": {
+        "checkpoint_01_input_lock.json": "5e19a1f2767a590b2e5c74b8d733d6de266e8385901f58cec05a77495ad138eb",
+        "checkpoint_02_smoke.json": "edf26c1577c4823dc1147cb78376664b6d5cb123f7fe63c454cd373f17cde258",
+        "checkpoint_03_full_report.json": "49037581772ad54ee626246c185e6c540a34105a92033938ea28997b1b85ac8f"
+      }
+    },
+    {
+      "name": "d1b_calibration_uncertainty_completion",
+      "root": "results/d1b_calibration_uncertainty_v1",
+      "manifest": "manifest.json",
+      "file_manifest": "file_sha256.json",
+      "expected_status": "passed",
+      "expected_file_manifest_sha256": "fd0a719b1e3588922c5e16f7309f81f34f636317e434e0b289a9f16b0249335f",
+      "required_files": {
+        "checkpoint_01_input_lock.json": "8effeec0bf5e900a648fbcb3cc715a1757582df633181ebc9e84725395e961ac",
+        "checkpoint_02_smoke.json": "386dfd260c3647b2dd647fffdef8790d05ae9df176aac6ae67cd3bd3f0925544",
+        "checkpoint_03_full_report.json": "7a0be201e72ec0956b2d52e7b7996f864c8633b7e9b22cce11d5f7de7e702c81"
+      }
+    }
+  ]
+}

@@ -1,0 +1,813 @@
+{
+  "stage": "restart_confirmation_scope_lock_v1",
+  "created_at_utc": "2026-08-25T13:35:40.865075+00:00",
+  "outcome_access": "not_read",
+  "forbidden_files": [
+    "outcome_withheld.parquet"
+  ],
+  "protocol_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\docs\\00_\u91cd\u542f\u7814\u7a76\u534f\u8bae_v1_2026-08-25.md",
+  "protocol_sha256": "a223b3bc993e1c4715b626bfdde12a90e663189cbdd11e8f44e7d6a0a3b48c70",
+  "script_path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\scripts\\lock_confirmation_scopes_v1.py",
+  "script_sha256": "d24f1ffe696cae7a331977ca7dd62961538722b05c26b713b80c5e8a5da93cb7",
+  "required_raw_files": [
+    "map_manifest.json",
+    "event_stream.parquet",
+    "full_tick_player_state.parquet",
+    "position_remedy.parquet",
+    "context.parquet",
+    "weapon_inventory.parquet"
+  ],
+  "datasets": [
+    {
+      "dataset": "D1-B",
+      "source_partition": "D1-B",
+      "source_candidate": {
+        "path": "D:\\CS2_p_hat_v3_d1_extracted_v1\\candidate\\p_hat_v7a_d1_v1b_candidate.parquet",
+        "sha256": "0e86171a522ba58f3810a54ab8b3b48e911cef6efb4ca43b5fdd731f0fa0e1ac",
+        "schema": [
+          {
+            "name": "duel_id",
+            "type": "large_string"
+          },
+          {
+            "name": "match_id",
+            "type": "large_string"
+          },
+          {
+            "name": "map_id",
+            "type": "large_string"
+          },
+          {
+            "name": "partition",
+            "type": "large_string"
+          },
+          {
+            "name": "queue_order",
+            "type": "int64"
+          },
+          {
+            "name": "event_tick",
+            "type": "int64"
+          },
+          {
+            "name": "anchor_tick",
+            "type": "int64"
+          },
+          {
+            "name": "anchor_clamped",
+            "type": "int64"
+          },
+          {
+            "name": "focal_orientation_rule",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_player_key",
+            "type": "large_string"
+          },
+          {
+            "name": "opponent_player_key",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_minus_opponent_health",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_armor",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_team_alive",
+            "type": "double"
+          },
+          {
+            "name": "focal_speed",
+            "type": "double"
+          },
+          {
+            "name": "opponent_speed",
+            "type": "double"
+          },
+          {
+            "name": "focal_map_velocity_known",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_map_velocity_known",
+            "type": "int64"
+          },
+          {
+            "name": "pre_event_position_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_side",
+            "type": "large_string"
+          },
+          {
+            "name": "map_name",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_minus_opponent_money",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_equipment_value",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_team_equipment_value",
+            "type": "double"
+          },
+          {
+            "name": "focal_has_helmet",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_has_helmet",
+            "type": "int64"
+          },
+          {
+            "name": "focal_has_defuser",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_has_defuser",
+            "type": "int64"
+          },
+          {
+            "name": "focal_weapon",
+            "type": "large_string"
+          },
+          {
+            "name": "opponent_weapon",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_weapon_pair",
+            "type": "large_string"
+          },
+          {
+            "name": "absolute_vertical_position_difference",
+            "type": "double"
+          },
+          {
+            "name": "relative_radial_speed",
+            "type": "double"
+          },
+          {
+            "name": "relative_transverse_speed",
+            "type": "double"
+          },
+          {
+            "name": "relative_angular_speed",
+            "type": "double"
+          },
+          {
+            "name": "focal_facing_error_radians",
+            "type": "double"
+          },
+          {
+            "name": "opponent_facing_error_radians",
+            "type": "double"
+          },
+          {
+            "name": "focal_nearest_living_teammate_distance",
+            "type": "double"
+          },
+          {
+            "name": "opponent_nearest_living_teammate_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_alone",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_alone",
+            "type": "int64"
+          },
+          {
+            "name": "focal_nearest_living_enemy_distance",
+            "type": "double"
+          },
+          {
+            "name": "opponent_nearest_living_enemy_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_scoped",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_scoped",
+            "type": "int64"
+          },
+          {
+            "name": "focal_is_flashed",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_flashed",
+            "type": "int64"
+          },
+          {
+            "name": "focal_flash_remaining_seconds",
+            "type": "double"
+          },
+          {
+            "name": "opponent_flash_remaining_seconds",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_defusing",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_defusing",
+            "type": "int64"
+          },
+          {
+            "name": "bomb_planted",
+            "type": "int64"
+          },
+          {
+            "name": "bomb_time_remaining_seconds",
+            "type": "double"
+          }
+        ]
+      },
+      "locked_scope": {
+        "path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\D1-B\\candidate_scope_outcome_free.parquet",
+        "sha256": "774b2ffe61ecdc5d011809332969752720e46e5856a0aabdd986cdab501f71e5",
+        "rows": 32791,
+        "matches": 100,
+        "maps": 226
+      },
+      "structurally_excluded": {
+        "rows": 0,
+        "matches": 0,
+        "maps": 0
+      },
+      "raw_availability_audit": {
+        "path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\D1-B\\raw_availability_audit.parquet",
+        "sha256": "a94e448b0ad604fdea863a80b540856a5d93932393bb79ea4c51eb5fab0c36d6"
+      },
+      "scope_columns": [
+        "duel_id",
+        "match_id",
+        "map_id",
+        "partition",
+        "queue_order",
+        "event_tick",
+        "focal_player_key",
+        "opponent_player_key",
+        "map_name"
+      ]
+    },
+    {
+      "dataset": "D1-C",
+      "source_partition": "D1-C",
+      "source_candidate": {
+        "path": "D:\\CS2_p_hat_v3_d1_extracted_v1\\candidate\\p_hat_v7a_d1_v1b_candidate.parquet",
+        "sha256": "0e86171a522ba58f3810a54ab8b3b48e911cef6efb4ca43b5fdd731f0fa0e1ac",
+        "schema": [
+          {
+            "name": "duel_id",
+            "type": "large_string"
+          },
+          {
+            "name": "match_id",
+            "type": "large_string"
+          },
+          {
+            "name": "map_id",
+            "type": "large_string"
+          },
+          {
+            "name": "partition",
+            "type": "large_string"
+          },
+          {
+            "name": "queue_order",
+            "type": "int64"
+          },
+          {
+            "name": "event_tick",
+            "type": "int64"
+          },
+          {
+            "name": "anchor_tick",
+            "type": "int64"
+          },
+          {
+            "name": "anchor_clamped",
+            "type": "int64"
+          },
+          {
+            "name": "focal_orientation_rule",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_player_key",
+            "type": "large_string"
+          },
+          {
+            "name": "opponent_player_key",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_minus_opponent_health",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_armor",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_team_alive",
+            "type": "double"
+          },
+          {
+            "name": "focal_speed",
+            "type": "double"
+          },
+          {
+            "name": "opponent_speed",
+            "type": "double"
+          },
+          {
+            "name": "focal_map_velocity_known",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_map_velocity_known",
+            "type": "int64"
+          },
+          {
+            "name": "pre_event_position_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_side",
+            "type": "large_string"
+          },
+          {
+            "name": "map_name",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_minus_opponent_money",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_equipment_value",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_team_equipment_value",
+            "type": "double"
+          },
+          {
+            "name": "focal_has_helmet",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_has_helmet",
+            "type": "int64"
+          },
+          {
+            "name": "focal_has_defuser",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_has_defuser",
+            "type": "int64"
+          },
+          {
+            "name": "focal_weapon",
+            "type": "large_string"
+          },
+          {
+            "name": "opponent_weapon",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_weapon_pair",
+            "type": "large_string"
+          },
+          {
+            "name": "absolute_vertical_position_difference",
+            "type": "double"
+          },
+          {
+            "name": "relative_radial_speed",
+            "type": "double"
+          },
+          {
+            "name": "relative_transverse_speed",
+            "type": "double"
+          },
+          {
+            "name": "relative_angular_speed",
+            "type": "double"
+          },
+          {
+            "name": "focal_facing_error_radians",
+            "type": "double"
+          },
+          {
+            "name": "opponent_facing_error_radians",
+            "type": "double"
+          },
+          {
+            "name": "focal_nearest_living_teammate_distance",
+            "type": "double"
+          },
+          {
+            "name": "opponent_nearest_living_teammate_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_alone",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_alone",
+            "type": "int64"
+          },
+          {
+            "name": "focal_nearest_living_enemy_distance",
+            "type": "double"
+          },
+          {
+            "name": "opponent_nearest_living_enemy_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_scoped",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_scoped",
+            "type": "int64"
+          },
+          {
+            "name": "focal_is_flashed",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_flashed",
+            "type": "int64"
+          },
+          {
+            "name": "focal_flash_remaining_seconds",
+            "type": "double"
+          },
+          {
+            "name": "opponent_flash_remaining_seconds",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_defusing",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_defusing",
+            "type": "int64"
+          },
+          {
+            "name": "bomb_planted",
+            "type": "int64"
+          },
+          {
+            "name": "bomb_time_remaining_seconds",
+            "type": "double"
+          }
+        ]
+      },
+      "locked_scope": {
+        "path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\D1-C\\candidate_scope_outcome_free.parquet",
+        "sha256": "5c5ce8d015369f73b3053a2d9084185542f84b4be5288acb7a849cb1f7f1b80f",
+        "rows": 25084,
+        "matches": 100,
+        "maps": 180
+      },
+      "structurally_excluded": {
+        "rows": 0,
+        "matches": 0,
+        "maps": 0
+      },
+      "raw_availability_audit": {
+        "path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\D1-C\\raw_availability_audit.parquet",
+        "sha256": "f0a4581fd0abd3477edab54938af9cb8c2294d5a1f226c1448d970e5606494a2"
+      },
+      "scope_columns": [
+        "duel_id",
+        "match_id",
+        "map_id",
+        "partition",
+        "queue_order",
+        "event_tick",
+        "focal_player_key",
+        "opponent_player_key",
+        "map_name"
+      ]
+    },
+    {
+      "dataset": "E1-v2",
+      "source_partition": "E1-V2",
+      "source_candidate": {
+        "path": "D:\\CS2_p_hat_v3_d1_extracted_e1v2\\candidate\\p_hat_v3_d1_e1v2_candidate_outcome_withheld.parquet",
+        "sha256": "e2991c5b203c80bc9167b7015cfd696decabb05dde7a52366a47553b26bc026a",
+        "schema": [
+          {
+            "name": "duel_id",
+            "type": "large_string"
+          },
+          {
+            "name": "match_id",
+            "type": "large_string"
+          },
+          {
+            "name": "map_id",
+            "type": "large_string"
+          },
+          {
+            "name": "partition",
+            "type": "large_string"
+          },
+          {
+            "name": "queue_order",
+            "type": "int64"
+          },
+          {
+            "name": "event_tick",
+            "type": "int64"
+          },
+          {
+            "name": "pre_event_tick",
+            "type": "int64"
+          },
+          {
+            "name": "focal_orientation_rule",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_player_key",
+            "type": "large_string"
+          },
+          {
+            "name": "opponent_player_key",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_minus_opponent_health",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_armor",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_team_alive",
+            "type": "double"
+          },
+          {
+            "name": "focal_speed",
+            "type": "double"
+          },
+          {
+            "name": "opponent_speed",
+            "type": "double"
+          },
+          {
+            "name": "focal_speed_missing",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_speed_missing",
+            "type": "int64"
+          },
+          {
+            "name": "focal_map_velocity_known",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_map_velocity_known",
+            "type": "int64"
+          },
+          {
+            "name": "pre_event_position_distance",
+            "type": "double"
+          },
+          {
+            "name": "round_elapsed_seconds",
+            "type": "double"
+          },
+          {
+            "name": "map_elapsed_10_minutes",
+            "type": "double"
+          },
+          {
+            "name": "log1p_focal_gap_seconds",
+            "type": "double"
+          },
+          {
+            "name": "log1p_opponent_gap_seconds",
+            "type": "double"
+          },
+          {
+            "name": "focal_side",
+            "type": "large_string"
+          },
+          {
+            "name": "map_name",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_minus_opponent_money",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_equipment_value",
+            "type": "double"
+          },
+          {
+            "name": "focal_minus_opponent_team_equipment_value",
+            "type": "double"
+          },
+          {
+            "name": "focal_has_helmet",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_has_helmet",
+            "type": "int64"
+          },
+          {
+            "name": "focal_has_defuser",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_has_defuser",
+            "type": "int64"
+          },
+          {
+            "name": "focal_weapon",
+            "type": "large_string"
+          },
+          {
+            "name": "opponent_weapon",
+            "type": "large_string"
+          },
+          {
+            "name": "focal_weapon_pair",
+            "type": "large_string"
+          },
+          {
+            "name": "absolute_vertical_position_difference",
+            "type": "double"
+          },
+          {
+            "name": "relative_radial_speed",
+            "type": "double"
+          },
+          {
+            "name": "relative_transverse_speed",
+            "type": "double"
+          },
+          {
+            "name": "relative_angular_speed",
+            "type": "double"
+          },
+          {
+            "name": "focal_facing_error_radians",
+            "type": "double"
+          },
+          {
+            "name": "opponent_facing_error_radians",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_alone",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_alone",
+            "type": "int64"
+          },
+          {
+            "name": "focal_nearest_living_teammate_distance",
+            "type": "double"
+          },
+          {
+            "name": "opponent_nearest_living_teammate_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_nearest_living_enemy_distance",
+            "type": "double"
+          },
+          {
+            "name": "opponent_nearest_living_enemy_distance",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_scoped",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_scoped",
+            "type": "int64"
+          },
+          {
+            "name": "focal_flash_alpha",
+            "type": "double"
+          },
+          {
+            "name": "opponent_flash_alpha",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_flashed",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_flashed",
+            "type": "int64"
+          },
+          {
+            "name": "focal_flash_remaining_seconds",
+            "type": "double"
+          },
+          {
+            "name": "opponent_flash_remaining_seconds",
+            "type": "double"
+          },
+          {
+            "name": "focal_is_in_bomb_zone",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_in_bomb_zone",
+            "type": "int64"
+          },
+          {
+            "name": "focal_is_defusing",
+            "type": "int64"
+          },
+          {
+            "name": "opponent_is_defusing",
+            "type": "int64"
+          },
+          {
+            "name": "bomb_state",
+            "type": "large_string"
+          },
+          {
+            "name": "bomb_site",
+            "type": "large_string"
+          },
+          {
+            "name": "bomb_planted",
+            "type": "int64"
+          },
+          {
+            "name": "bomb_time_remaining_seconds",
+            "type": "double"
+          }
+        ]
+      },
+      "locked_scope": {
+        "path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\E1-v2\\candidate_scope_outcome_free.parquet",
+        "sha256": "052ef978681ecf3737b43c98dfd1a3177c5ee66c202af29f5388546c81b4ee27",
+        "rows": 78352,
+        "matches": 237,
+        "maps": 557
+      },
+      "structurally_excluded": {
+        "rows": 4072,
+        "matches": 15,
+        "maps": 20
+      },
+      "raw_availability_audit": {
+        "path": "C:\\Users\\Admin\\Desktop\\information flow for hot-hand-effect\\main\\restart_20260825\\data\\confirmation_scopes_v1\\E1-v2\\raw_availability_audit.parquet",
+        "sha256": "413905cf2ba3567aca4d78295001333120cba92b2315849429a21c06b2c79502"
+      },
+      "scope_columns": [
+        "duel_id",
+        "match_id",
+        "map_id",
+        "partition",
+        "queue_order",
+        "event_tick",
+        "focal_player_key",
+        "opponent_player_key",
+        "map_name"
+      ]
+    }
+  ]
+}

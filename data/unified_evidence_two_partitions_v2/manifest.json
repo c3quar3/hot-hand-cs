@@ -1,0 +1,19 @@
+{
+  "stage": "unified_evidence_two_partitions_v2",
+  "created_at_utc": "2026-08-26T23:14:47.777555+00:00",
+  "input_lock_sha256": "b315b8a5d3c5510b14766bf9a48cdfcd4b47daa726eb717eff31f2ada52e31a2",
+  "assignment_unit": "match_id",
+  "columns": [
+    "partition",
+    "canonical_source",
+    "coverage_stratum",
+    "match_id",
+    "map_count",
+    "stable_rank"
+  ],
+  "outcome_boundary": "No Y_t, p_hat, e_t, state, coefficient, confidence interval, p value, or loss is written to this package.",
+  "files": {
+    "match_assignments.parquet": "f0e490d495a00c4f05a6e85b68d84fbbc32f132b4706ee077f86a13c064ff97a",
+    "match_assignments.csv": "bcc8d2aab363d5220770abe2379e68a92a368b897c52627478642e9a638072cd"
+  }
+}

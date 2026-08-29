@@ -1,0 +1,54 @@
+{
+  "stage": "future_independent_confirmation_candidate_inventory_v1",
+  "status": "outcome_free_unfrozen_candidate_inventory",
+  "created_local_date": "2026-08-26",
+  "purpose": "Compact source inventory for a future independent confirmation of the fixed 60-second exponentially decayed residual-history state.",
+  "outcome_access": "not_read",
+  "archive_content_access": "not_read",
+  "candidate_archives": 50,
+  "candidate_archive_bytes": 43498587291,
+  "candidate_archive_gib": 40.511,
+  "selection_rule": {
+    "primary": "All 40 archives whose filenames match esl-pro-league-season-21-*.rar, ordered lexically by filename.",
+    "secondary": "The first 10 archives whose filenames match iem-katowice-2025-*.rar, ordered lexically by filename.",
+    "selection_inputs": [
+      "archive path",
+      "archive filename",
+      "archive byte count",
+      "archive filesystem timestamp"
+    ],
+    "forbidden_selection_inputs": [
+      "gameplay outcome",
+      "label",
+      "conditional residual",
+      "model estimate",
+      "p value",
+      "loss"
+    ]
+  },
+  "source_root": "D:\\CS2_raw_matches",
+  "metadata_index_sha256": "c1f5e78f40ed151598eb78c6b008694997dc125bd36daa074c7f5d143bf82a9c",
+  "metadata_index_definition": "UTF-8 SHA-256 of newline-joined ordered source_archive|bytes|last_write_utc triples; not a content hash.",
+  "preliminary_exclusion_screen": {
+    "method": "Exact archive-basename comparison only; not match_id/map_id de-duplication.",
+    "compared_locations": [
+      "D:\\CS2_D1_raw_archives",
+      "D:\\CS2_E1_raw_archives",
+      "D:\\CS2_v3_development_raw_archives",
+      "D:\\CS2_external_confirmation\\pilot\\raw_research_use_confirmed",
+      "D:\\CS2_external_confirmation\\pilot\\raw_pending_rights_review",
+      "D:\\CS2_external_pilot\\raw"
+    ],
+    "exact_basename_overlaps": 0
+  },
+  "required_before_freezing": [
+    "Archive-existence and metadata recheck",
+    "Research-use rights audit",
+    "Outcome-free exact match_id/map_id extraction",
+    "Zero-overlap audit against D1-A/D1-B/D1-C/E1-v2 scope locks",
+    "Prior-access audit",
+    "Outcome-withheld feature-contract and state-prerequisite audit",
+    "Explicit authorization and a new frozen confirmation protocol before label access"
+  ],
+  "evidence_boundary": "This inventory does not establish independent eligibility, sufficient precision, model performance, hot-hand evidence, or authorization to access results."
+}
